@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/itemSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/itemAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemSubmitButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Add" />
+
+    <EditText
+        android:id="@+id/expenseCurrencyEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemAddButton"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Currency" />
+
+    <EditText
+        android:id="@+id/expenseValueEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/expenseCurrencyEditText"
+        android:layout_toLeftOf="@+id/expenseCurrencyEditText"
+        android:ems="10"
+        android:hint="Value"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/expenseDateEditText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemAddButton"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/expenseNameEditText"
+        android:layout_toLeftOf="@+id/expenseValueEditText"
+        android:ems="10"
+        android:hint="mm-dd-yyyy"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/expenseNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/expenseValueEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Enter an expense"
+        android:inputType="textMultiLine" />
+
+    <ListView
+        android:id="@+id/expenseListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/expenseNameEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+    </ListView>
+
+</RelativeLayout>

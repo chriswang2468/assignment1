@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.claimit123"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="ca.ualberta.cs.claimit123.Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.claimit123.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.claimit123.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.claimit123.Expense"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.claimit123.EXPENSE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.claimit123.Event"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.claimit123.EVENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.claimit123.ListEventActivity"
+            android:label="@string/title_activity_list_exvent" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.claimit123.EventActivity"
+            android:label="@string/title_activity_create_event" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.claimit123.ListHistoryEventActivity"
+            android:label="@string/title_activity_list_history_event" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.claimit123.CreateEventActivity"
+            android:label="@string/title_activity_create_event" >
+        </activity>
+    </application>
+
+</manifest>
